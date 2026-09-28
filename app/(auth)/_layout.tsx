@@ -1,0 +1,17 @@
+// app/(auth)/_layout.tsx — Grup halaman auth (tanpa bottom nav).
+import { Stack } from 'expo-router';
+import { colors } from '@/constants/colors';
+
+export default function AuthLayout() {
+  return (
+    <Stack
+      screenOptions={{
+        headerShown: false,
+        contentStyle: { backgroundColor: colors.background },
+      }}
+    >
+      <Stack.Screen name="login" />
+      <Stack.Screen name="register" />
+    </Stack>
+  );
+}

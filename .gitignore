@@ -1,0 +1,52 @@
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+android/
+ios/
+*.apk
+*.aab
+
+# Metro
+.metro-health-check*
+
+# Debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# Environment variables — JANGAN commit!
+# eas.json memuat blok build.*.env berisi API key asli → jangan ikut ter-commit.
+# Pakai eas.json.example sebagai template, lalu simpan nilai asli di EAS secrets.
+eas.json
+.env
+.env.local
+.env.production
+.env*.local
+
+# Firebase
+google-services.json
+GoogleService-Info.plist
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+
+# Typescript
+*.tsbuildinfo

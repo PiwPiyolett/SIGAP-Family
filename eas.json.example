@@ -1,0 +1,42 @@
+{
+  "cli": {
+    "version": ">= 13.0.0",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": { "buildType": "apk" }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": { "buildType": "apk" },
+      "env": {
+        "EXPO_PUBLIC_FIREBASE_API_KEY": "isi_lewat_eas_secret",
+        "EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN": "isi_lewat_eas_secret",
+        "EXPO_PUBLIC_FIREBASE_PROJECT_ID": "isi_lewat_eas_secret",
+        "EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET": "isi_lewat_eas_secret",
+        "EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID": "isi_lewat_eas_secret",
+        "EXPO_PUBLIC_FIREBASE_APP_ID": "isi_lewat_eas_secret",
+        "EXPO_PUBLIC_GEMINI_API_KEY": "isi_lewat_eas_secret"
+      }
+    },
+    "production": {
+      "distribution": "internal",
+      "android": { "buildType": "apk" },
+      "env": {
+        "EXPO_PUBLIC_FIREBASE_API_KEY": "isi_lewat_eas_secret",
+        "EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN": "isi_lewat_eas_secret",
+        "EXPO_PUBLIC_FIREBASE_PROJECT_ID": "isi_lewat_eas_secret",
+        "EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET": "isi_lewat_eas_secret",
+        "EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID": "isi_lewat_eas_secret",
+        "EXPO_PUBLIC_FIREBASE_APP_ID": "isi_lewat_eas_secret",
+        "EXPO_PUBLIC_GEMINI_API_KEY": "isi_lewat_eas_secret"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
