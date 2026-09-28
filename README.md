@@ -1,80 +1,62 @@
-# 🛡️ SIGAP: Guardian Driver
+<div align="center">
 
-Aplikasi deteksi kecelakaan otomatis + SOS WhatsApp untuk pengemudi di Indonesia.
-React Native + Expo (Expo Router) · TypeScript · Design system **Dark Guardian**.
+<img src="assets/images/icon.png" alt="SIGAP Family" width="110">
+
+# 🛡️ SIGAP — Family
+
+**Pendamping keluarga untuk ekosistem keselamatan berkendara SIGAP.**
+
+Memantau perjalanan anggota keluarga secara real-time dan menerima peringatan darurat saat terjadi kecelakaan.
+
+![Expo](https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white)
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+![Gemini](https://img.shields.io/badge/AI-Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)
+
+</div>
 
 ---
 
-## ⚠️ Prasyarat (WAJIB sebelum menjalankan)
+## ✨ Fitur
 
-Node.js **belum terpasang** di komputer ini. Pasang dulu:
+- 👨‍👩‍👧 **Pantau anggota keluarga** — lihat status & lokasi pengemudi secara real-time.
+- 🚨 **Peringatan darurat instan** — notifikasi langsung saat deteksi kecelakaan terpicu.
+- 🗺️ **Riwayat perjalanan** — pantau rute dan aktivitas berkendara keluarga.
+- 🔗 **Terhubung dengan SIGAP-Siswa** — data mengalir dari aplikasi pengemudi.
+- 🎨 **Design system "Dark Guardian"** — konsisten dengan seluruh ekosistem SIGAP.
 
-1. Download **Node.js LTS** dari https://nodejs.org → jalankan installer `.msi` (biarkan opsi default).
-2. **Tutup & buka ulang** terminal / VS Code agar PATH ter-update.
-3. Verifikasi:
-   ```powershell
-   node --version   # mis. v20.x.x
-   npm --version    # mis. 10.x.x
-   ```
+## 🛠️ Tech Stack
 
----
+**Framework:** Expo (Expo Router) · React Native · TypeScript
+**Lokasi & notifikasi:** expo-location · expo-notifications
+**Backend:** Firebase · Google Generative AI (Gemini)
+**UI:** expo-linear-gradient · lucide-react-native · react-native-reanimated
 
-## 🚀 Menjalankan proyek
+## 🚀 Menjalankan
 
-```powershell
-# 1. Dari folder proyek ini
+```bash
+# Pasang dependency
 npm install
 
-# 2. (Penting) selaraskan versi paket dengan versi Expo SDK yang terpasang
-npx expo install --fix
-
-# 3. Jalankan
-npx expo start
+# Jalankan (buka di Expo Go / emulator)
+npm start
 ```
 
-Lalu:
-- Scan QR code dengan app **Expo Go** di HP (rekomendasi — sensor butuh perangkat nyata), atau
-- Tekan `a` untuk Android Emulator.
+> Butuh [Node.js LTS](https://nodejs.org). Salin `.env.example` → `.env` dan `eas.json.example` → `eas.json`, lalu isi kredensial Firebase & API key (file asli sengaja diabaikan dari repo demi keamanan).
 
-> Buat file `.env` dari `.env.example` dan isi kunci Firebase + Gemini sebelum fitur auth/AI dipakai (STEP 3 & 13).
+## 🧩 Ekosistem SIGAP
+
+| Aplikasi | Peran |
+|---|---|
+| [SIGAP-Siswa](https://github.com/PiwPiyolett/SIGAP-Siswa) | Aplikasi pengemudi — deteksi kecelakaan & SOS |
+| **SIGAP-Family** (repo ini) | Pendamping keluarga — memantau pengemudi |
+| [SIGAP-Sekolah](https://github.com/PiwPiyolett/SIGAP-Sekolah) | Pemantauan pihak sekolah |
 
 ---
 
-## 📁 Struktur
+<div align="center">
 
-```
-app/                      # Expo Router (file-based routing)
-  _layout.tsx             # Root: load font + splash + stack
-  index.tsx               # Entry / splash sederhana
-  (auth)/                 # login, register (tanpa bottom nav)
-  (tabs)/                 # index (Home), riwayat, edukasi (+ bottom nav)
-  perjalanan/aktif.tsx    # Active Trip Screen
-  pengaturan/kontak-darurat.tsx
-components/ui/            # Button, Card, Screen (+ menyusul)
-constants/                # colors, typography, spacing, shadows, thresholds
-types/                    # TypeScript interfaces
-assets/images/            # icon/splash placeholder (ganti dengan logo asli)
-```
+**Ariqo Banyusila Abrar** · [@PiwPiyolett](https://github.com/PiwPiyolett)
 
----
-
-## 🗺️ Roadmap pembangunan
-
-| Step | Fitur | Status |
-|------|-------|--------|
-| 1 | Setup project + navigasi + design system | ✅ Selesai |
-| 2 | Splash screen + animasi opening | ⬜ |
-| 3 | Login & Register + Firebase Auth | ⬜ |
-| 4 | Home Dashboard UI | ⬜ |
-| 5 | Accelerometer + Gyroscope (HP fisik) | ⬜ |
-| 6 | GPS tracking + jarak | ⬜ |
-| 7 | Active Trip + SpeedGauge + StatCards | ⬜ |
-| 8 | Deteksi kecelakaan + SOS Alert overlay | ⬜ |
-| 9 | Kontak Darurat + Firestore | ⬜ |
-| 10 | SOS WhatsApp (deep link) | ⬜ |
-| 11 | Simpan perjalanan ke Firestore | ⬜ |
-| 12 | Riwayat Perjalanan | ⬜ |
-| 13 | Chat AI Gemini | ⬜ |
-| 14–15 | Testing + polish | ⬜ |
-
-Detail lengkap ada di `SIGAP_Master_Brief_v3.md`.
+</div>
