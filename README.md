@@ -2,7 +2,7 @@
 
 <img src="assets/images/icon.png" alt="SIGAP Family" width="110">
 
-# 🛡️ SIGAP — Family
+# 🛡️ SIGAP · Family
 
 **Pendamping keluarga untuk ekosistem keselamatan berkendara SIGAP.**
 
@@ -20,11 +20,11 @@ Memantau perjalanan anggota keluarga secara real-time dan menerima peringatan da
 
 ## ✨ Fitur
 
-- 👨‍👩‍👧 **Pantau anggota keluarga** — lihat status & lokasi pengemudi secara real-time.
-- 🚨 **Peringatan darurat instan** — notifikasi langsung saat deteksi kecelakaan terpicu.
-- 🗺️ **Riwayat perjalanan** — pantau rute dan aktivitas berkendara keluarga.
-- 🔗 **Terhubung dengan SIGAP-Siswa** — data mengalir dari aplikasi pengemudi.
-- 🎨 **Design system "Dark Guardian"** — konsisten dengan seluruh ekosistem SIGAP.
+- 👨‍👩‍👧 **Pantau anggota keluarga**, lihat status & lokasi pengemudi secara real-time.
+- 🚨 **Peringatan darurat instan**, notifikasi langsung saat deteksi kecelakaan terpicu.
+- 🗺️ **Riwayat perjalanan**, pantau rute dan aktivitas berkendara keluarga.
+- 🔗 **Terhubung dengan SIGAP-Siswa**, data mengalir dari aplikasi pengemudi.
+- 🎨 **Design system "Dark Guardian"**, konsisten dengan seluruh ekosistem SIGAP.
 
 ## 🛠️ Tech Stack
 
@@ -49,8 +49,8 @@ npm start
 
 | Aplikasi | Peran |
 |---|---|
-| [SIGAP-Siswa](https://github.com/PiwPiyolett/SIGAP-Siswa) | Aplikasi pengemudi — deteksi kecelakaan & SOS |
-| **SIGAP-Family** (repo ini) | Pendamping keluarga — memantau pengemudi |
+| [SIGAP-Siswa](https://github.com/PiwPiyolett/SIGAP-Siswa) | Aplikasi pengemudi, deteksi kecelakaan & SOS |
+| **SIGAP-Family** (repo ini) | Pendamping keluarga, memantau pengemudi |
 | [SIGAP-Sekolah](https://github.com/PiwPiyolett/SIGAP-Sekolah) | Pemantauan pihak sekolah |
 
 ---
